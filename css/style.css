@@ -10,7 +10,6 @@ body {
   background: #181818;
   color: #ffffff;
   line-height: 1.7;
-  overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -101,8 +100,8 @@ input {
   border: none;
   background: #aaaaaa;
 }
-.separator span{
-    padding: 0px 0.8rem;
+.separator span {
+  padding: 0px 0.8rem;
 }
 /* Signup Block */
 .sign-up {
@@ -154,4 +153,35 @@ footer p a {
 }
 footer p a:nth-child(1) {
   border-right: 1px solid #ffffff;
+}
+
+/* Media queries for responsiveness */
+/* Tabs */
+@media (max-width: 1200px) {
+  .authentication {
+    flex: 1;
+  }
+  .showcase {
+    flex: 1;
+  }
+  .separator {
+    padding: 0px 20px;
+  }
+  .btn {
+    width: 80%;
+  }
+  .sign-up-btn {
+    width: 80%;
+    padding: 8px 0px;
+  }
+}
+/* Small screen mobiles */
+@media (max-width: 768px) {
+  .authentication {
+    flex: 1;
+  }
+  .showcase {
+    flex: 1;
+    display: none;
+  }
 }
