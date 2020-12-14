@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +6,48 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   background: #181818;
   color: #ffffff;
+  line-height: 1.7;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.wrapper {
+  display: flex;
+}
+
+.btn{
+    display: inline-block;
+    border: 1px solid #ffffff;
+    align-self: center;
+    padding: 8px 35px;
+    width: 35%;
+    margin-top: 20px;
+}
+.authentication {
+  flex: 4;
+}
+.showcase {
+  display: flex;
+  flex-direction: column;
+  flex: 6;
+  background: url("../images/showcase.jpg") center center/cover;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+.showcase h2 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+.showcase h2 span{
+    font-weight: bold;
+}
+.showcase a span{
+    text-transform: uppercase;
 }
