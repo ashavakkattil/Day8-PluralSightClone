@@ -42,14 +42,14 @@ a {
 .form-container {
   display: flex;
   flex-direction: column;
-  margin: 150px 40px 40px 40px;
+  margin: 150px 40px 40px 20px;
 }
 .logo {
   width: 300px;
   align-self: center;
 }
 .sign-in-form{
-    margin: 50px 10px;
+    margin: 50px 10px 20px 10px;
     padding: 10px;
 }
 .form-container label,
@@ -62,9 +62,10 @@ input {
 .form-container input{
     background: #181818;
     border: 1px solid #555555;
-    padding: 10px 0px;
+    padding: 10px;
     height: 2.7rem;
     margin-bottom: 20px;
+    color: #ffffff;
 }
 .form-container .sign-in-btn{
     background-color: #f96816;
@@ -73,6 +74,18 @@ input {
     font-weight: bold;
     width: 100%;
     text-align: center;
+}
+
+/* reset password block */
+.reset-password{
+    text-align: center;
+    font-size: 14px;
+}
+.reset-password p{
+    margin-top: 10px;
+}
+.reset-password p:last-child{
+    font-size: 17px;
 }
 /* Showcase */
 
