@@ -10,6 +10,7 @@ body {
   background: #181818;
   color: #ffffff;
   line-height: 1.7;
+  overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -28,6 +29,7 @@ a {
   margin-top: 20px;
   border-radius: 2px;
   height: 2.7rem;
+  text-align: center;
 }
 /* Authentication */
 
@@ -48,9 +50,9 @@ a {
   width: 300px;
   align-self: center;
 }
-.sign-in-form{
-    margin: 50px 10px 20px 10px;
-    padding: 10px;
+.sign-in-form {
+  margin: 50px 10px 20px 10px;
+  padding: 10px;
 }
 .form-container label,
 input {
@@ -59,33 +61,56 @@ input {
   font-size: 14px;
   line-height: 2rem;
 }
-.form-container input{
-    background: #181818;
-    border: 1px solid #555555;
-    padding: 10px;
-    height: 2.7rem;
-    margin-bottom: 20px;
-    color: #ffffff;
+.form-container input {
+  background: #181818;
+  border: 1px solid #555555;
+  padding: 10px;
+  height: 2.7rem;
+  margin-bottom: 20px;
+  color: #ffffff;
 }
-.form-container .sign-in-btn{
-    background-color: #f96816;
-    border: none;
-    font-size: 13px;
-    font-weight: bold;
-    width: 100%;
-    text-align: center;
+.form-container .sign-in-btn {
+  background-color: #f96816;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
 }
 
 /* reset password block */
-.reset-password{
-    text-align: center;
-    font-size: 14px;
+.reset-password {
+  text-align: center;
+  font-size: 14px;
 }
-.reset-password p{
-    margin-top: 10px;
+.reset-password p {
+  margin-top: 10px;
 }
-.reset-password p:last-child{
-    font-size: 17px;
+/* OR block */
+.separator {
+  display: flex;
+  justify-content: center;
+  color: #aaaaaa;
+  margin: 10px 0px;
+  padding: 0px 95px;
+}
+.bar {
+  flex: auto;
+  height: 1px;
+  align-self: center;
+  border: none;
+  background: #aaaaaa;
+}
+.separator span{
+    padding: 0px 0.8rem;
+}
+/* Signup Block */
+.sign-up {
+  display: flex;
+  justify-content: center;
+}
+.sign-up-btn {
+  width: 65%;
 }
 /* Showcase */
 
@@ -109,4 +134,24 @@ input {
 }
 .showcase a span {
   text-transform: uppercase;
+}
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 130px;
+  margin-bottom: 20px;
+}
+footer p {
+  margin: 10px 0px;
+}
+footer p a {
+  color: #f96816;
+  text-decoration: underline;
+  text-transform: capitalize;
+  margin-right: 2px;
+  padding: 0px 3px;
+}
+footer p a:nth-child(1) {
+  border-right: 1px solid #ffffff;
 }
