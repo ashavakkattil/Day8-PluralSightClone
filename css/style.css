@@ -29,6 +29,11 @@ a {
   border-radius: 2px;
   height: 2.7rem;
   text-align: center;
+  transition: all 0.5s;
+}
+.btn:hover {
+  border: 1px solid #ff7b39;
+  color: #ff7b39;
 }
 /* Authentication */
 
@@ -69,14 +74,19 @@ input {
   color: #ffffff;
 }
 .form-container .sign-in-btn {
-  background-color: #f96816;
+  background: #f96816;
   border: none;
   font-size: 13px;
   font-weight: bold;
   width: 100%;
   text-align: center;
+  transition: all 0.5s;
 }
+.form-container .sign-in-btn:hover {
+  background: #ff7b39;
+  color: white;
 
+}
 /* reset password block */
 .reset-password {
   text-align: center;
