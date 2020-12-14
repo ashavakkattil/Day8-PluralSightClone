@@ -24,7 +24,6 @@ a {
   border: 1px solid #ffffff;
   align-self: center;
   padding: 8px 38px;
-  width: 35%;
   margin-top: 20px;
   border-radius: 2px;
   height: 2.7rem;
@@ -38,7 +37,7 @@ a {
 /* Authentication */
 
 .authentication {
-  flex: 4;
+  flex: 1;
 }
 .container {
   width: 80%;
@@ -85,7 +84,6 @@ input {
 .form-container .sign-in-btn:hover {
   background: #ff7b39;
   color: white;
-
 }
 /* reset password block */
 .reset-password {
@@ -126,7 +124,7 @@ input {
 .showcase {
   display: flex;
   flex-direction: column;
-  flex: 6;
+  flex: 1;
   background: url("../images/showcase.jpg") center center/cover;
   height: 100vh;
   width: 100%;
@@ -167,20 +165,17 @@ footer p a:nth-child(1) {
 
 /* Media queries for responsiveness */
 /* Tabs */
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .authentication {
-    flex: 1;
+    flex: 4;
   }
   .showcase {
-    flex: 1;
+    flex: 6;
   }
   .separator {
     padding: 0px 20px;
   }
-  .btn {
-    width: 80%;
-  }
-  .sign-up-btn {
+  .sign-up-btn{
     width: 80%;
     padding: 8px 0px;
   }
